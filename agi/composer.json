@@ -1,0 +1,7 @@
+{
+    "require": {
+        "robrichards/xmlseclibs": "^3.1",
+        "firebase/php-jwt": "^6.10",
+        "zircote/swagger-php": "^4.10"
+    }
+}

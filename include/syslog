@@ -1,0 +1,323 @@
+Jun  2 11:14:40 raspberrypi rsyslogd:  [origin software="rsyslogd" swVersion="8.1901.0" x-pid="340" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
+Jun  2 11:14:40 raspberrypi rsyslogd:  [origin software="rsyslogd" swVersion="8.1901.0" x-pid="340" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
+Jun  2 11:14:47 raspberrypi php: ** NcdKeyCode ** NCD=32,key=21,CalledNo=32##,AnswerTm=,CancelTm=,AnswerNo=,NcdName=
+Jun  2 11:14:47 raspberrypi php: ** doNcdKeyProc ** select Led_assign,IP,realname from phone WHERE phoneno='32'=>1
+Jun  2 11:14:47 raspberrypi php: ** doNcdKeyProc ** NcdIPAddr=10.10.10.132, Led_assign=32, KeyCode=21
+Jun  2 11:14:47 raspberrypi php: ** doNcdKeyProc ** ActiveEvent=21,AreaId=0,CalledNo=32##(4),CancelEvent=
+Jun  2 11:14:47 raspberrypi php: ** doNcdLedControl ** (1, 4, 0, 4)
+Jun  2 11:14:47 raspberrypi php: ** doNcdLedControl ** http://10.10.10.132/content.cgi?_method_=ncd6.htm?device=1?status=4
+Jun  2 11:14:47 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:47 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:47 raspberrypi php: ** doNcdLedControl ** http://10.10.10.132/content.cgi?_method_=ncd6.htm?device=4?status=4
+Jun  2 11:14:47 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:47 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:47 raspberrypi php: ** doNcdKeyProc ** http://10.10.10.132/content.cgi?_method_=ncd6.htm?device=10?status=2
+Jun  2 11:14:47 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:47 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:47 raspberrypi php: ** NcdKeyCode ** NCD=32,key=82,CalledNo=0,AnswerTm=0,CancelTm=0,AnswerNo=,NcdName=
+Jun  2 11:14:47 raspberrypi php: ** doNcdKeyProc ** select Led_assign,IP,realname from phone WHERE phoneno='32'=>1
+Jun  2 11:14:47 raspberrypi php: ** doNcdKeyProc ** NcdIPAddr=10.10.10.132, Led_assign=32, KeyCode=82
+Jun  2 11:14:47 raspberrypi php: ** doNcdKeyProc ** CtiEvent/KeyCode=0/21(22)
+Jun  2 11:14:47 raspberrypi CTI_Tx: Ncd-32, Event-22
+Jun  2 11:14:47 raspberrypi CTI_Tx: pidof -x CTI return 836/836
+Jun  2 11:14:47 raspberrypi CTI_Tx: msgsnd-#016ñ#016æ#003N#00232S#001#026n#00232ë (Len=16/2/14), CheckSum=eb
+Jun  2 11:14:47 raspberrypi CTI: TX CTI socket-6: Len=17/17, Msg=#016ñ#016æ#003N#00232S#001#026n#00232ë
+Jun  2 11:14:47 raspberrypi php: ** doNcdKeyProc ** proc_fg IS NULL enent number=1
+Jun  2 11:14:47 raspberrypi php: ** doNcdKeyProc ** panelType=0, cntP= 0/0/1/0/0, active_event=21/21
+Jun  2 11:14:47 raspberrypi php: ** DoSendLedPanel ** panelType=0, 32-21
+Jun  2 11:14:47 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.101/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:47 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:47 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:47 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.102/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:47 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:47 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:47 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.103/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:47 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:47 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:47 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.105/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:47 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:47 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:47 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.106/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:47 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:47 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.107/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.108/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.109/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.110/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.111/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.114/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.116/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.118/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.120/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.122/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.124/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.125/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.127/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.129/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.132/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.134/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.136/content.cgi?_method_=ncd6.htm?device=128?status=432b
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:14:48 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc-1 ** phoneno=31,NcdIPAddr=10.10.10.131
+Jun  2 11:14:48 raspberrypi php: ** doNcdKeyProc-1 ** phoneno=32,NcdIPAddr=10.10.10.132
+Jun  2 11:15:01 raspberrypi cron[382]: (*system*paging) INSECURE MODE (group/other writable) (/etc/cron.d/paging)
+Jun  2 11:15:01 raspberrypi CRON[7600]: (root) CMD ((php /var/www/html/Nurse/NcdScan.php))
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.101' WHERE phoneno='01'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.102' WHERE phoneno='02'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.103' WHERE phoneno='03'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.105' WHERE phoneno='05'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.106' WHERE phoneno='06'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.107' WHERE phoneno='07'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.108' WHERE phoneno='08'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.109' WHERE phoneno='09'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.110' WHERE phoneno='10'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.111' WHERE phoneno='11'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.112' WHERE phoneno='12'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.114' WHERE phoneno='14'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.115' WHERE phoneno='15'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.116' WHERE phoneno='16'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.117' WHERE phoneno='17'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.118' WHERE phoneno='18'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.119' WHERE phoneno='19'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.120' WHERE phoneno='20'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.121' WHERE phoneno='21'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.122' WHERE phoneno='22'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.123' WHERE phoneno='23'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.124' WHERE phoneno='24'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.125' WHERE phoneno='25'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.126' WHERE phoneno='26'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.127' WHERE phoneno='27'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.128' WHERE phoneno='28'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.129' WHERE phoneno='29'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.130' WHERE phoneno='30'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.131' WHERE phoneno='31'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.132' WHERE phoneno='32'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.133' WHERE phoneno='33'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.134' WHERE phoneno='34'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.135' WHERE phoneno='35'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.136' WHERE phoneno='36'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.161' WHERE phoneno='61'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.162' WHERE phoneno='62'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.163' WHERE phoneno='63'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.165' WHERE phoneno='65'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.166' WHERE phoneno='66'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.167' WHERE phoneno='67'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.168' WHERE phoneno='68'
+Jun  2 11:15:03 raspberrypi php: ** NcdScan ** UPDATE `phone` SET `IP`='10.10.10.169' WHERE phoneno='69'
+Jun  2 11:15:03 raspberrypi CRON[7599]: (CRON) info (No MTA installed, discarding output)
+Jun  2 11:15:06 raspberrypi php: ** NcdKeyCode ** NCD=32,key=02,CalledNo=,AnswerTm=,CancelTm=,AnswerNo=,NcdName=
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** select Led_assign,IP,realname from phone WHERE phoneno='32'=>1
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** NcdIPAddr=10.10.10.132, Led_assign=32, KeyCode=2
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** ActiveEvent=0,AreaId=0,CalledNo=(0),CancelEvent=and (active_event<>10 || active_event<>8)
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** CtiEvent/KeyCode=0/2(34)
+Jun  2 11:15:06 raspberrypi php: ** CheckCancelNCDEvent-3 ** SELECT active_event,ncd_no from `ncd_active_event` WHERE ncd_no in (SELECT phoneno FROM `phone` WHERE Led_assign='32' OR phoneno='32') AND proc_fg IS NULL  -> 0
+Jun  2 11:15:06 raspberrypi php: ** doNcdLedControl ** (10, 0, 0, 1)
+Jun  2 11:15:06 raspberrypi php: ** doNcdLedControl ** http://10.10.10.132/content.cgi?_method_=ncd6.htm?device=10?status=1
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:06 raspberrypi CTI_Tx: Ncd-32, Event-34
+Jun  2 11:15:06 raspberrypi CTI_Tx: pidof -x CTI return 836/836
+Jun  2 11:15:06 raspberrypi CTI_Tx: msgsnd-#016ñ#012æ#002N#00232S#001"#035 (Len=12/2/10), CheckSum=1d
+Jun  2 11:15:06 raspberrypi CTI: TX CTI socket-6: Len=13/13, Msg=#016ñ#012æ#002N#00232S#001"#035
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** proc_fg IS NULL enent number=0
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.101/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.102/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.103/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.105/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.106/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.107/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.108/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.109/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.110/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.111/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.114/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.116/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:06 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.118/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:06 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:07 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.120/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:07 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.122/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:07 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.124/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:07 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.125/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:07 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.127/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:07 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.129/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:07 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.132/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:07 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.134/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:07 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.136/content.cgi?_method_=ncd6.htm?device=128?status=BBBB
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:07 raspberrypi php: ** doNcdKeyProc-1 ** phoneno=31,NcdIPAddr=10.10.10.131
+Jun  2 11:15:07 raspberrypi php: ** doNcdKeyProc-1 ** phoneno=32,NcdIPAddr=10.10.10.132
+Jun  2 11:15:07 raspberrypi php: ** doNcdLedControl ** (1, 4, 0, 1)
+Jun  2 11:15:07 raspberrypi php: ** doNcdLedControl ** http://10.10.10.132/content.cgi?_method_=ncd6.htm?device=1?status=1
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:07 raspberrypi php: ** doNcdLedControl ** http://10.10.10.132/content.cgi?_method_=ncd6.htm?device=4?status=1
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:07 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:30 raspberrypi php: ** NcdKeyCode ** NCD=31,key=01,CalledNo=31##,AnswerTm=,CancelTm=,AnswerNo=,NcdName=
+Jun  2 11:15:30 raspberrypi php: ** doNcdKeyProc ** select Led_assign,IP,realname from phone WHERE phoneno='31'=>1
+Jun  2 11:15:30 raspberrypi php: ** doNcdKeyProc ** NcdIPAddr=10.10.10.131, Led_assign=32, KeyCode=1
+Jun  2 11:15:30 raspberrypi php: ** doNcdKeyProc ** ActiveEvent=1,AreaId=0,CalledNo=31##(4),CancelEvent=
+Jun  2 11:15:30 raspberrypi php: ** doNcdLedControl ** (1, 2, 0, 2)
+Jun  2 11:15:30 raspberrypi php: ** doNcdLedControl ** http://10.10.10.131/content.cgi?_method_=ncd6.htm?device=1?status=2
+Jun  2 11:15:30 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:30 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:30 raspberrypi php: ** doNcdLedControl ** http://10.10.10.132/content.cgi?_method_=ncd6.htm?device=2?status=2
+Jun  2 11:15:30 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:30 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:30 raspberrypi php: ** doNcdKeyProc ** http://10.10.10.132/content.cgi?_method_=ncd6.htm?device=10?status=2
+Jun  2 11:15:30 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:30 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:30 raspberrypi php: ** NcdKeyCode ** NCD=31,key=82,CalledNo=0,AnswerTm=0,CancelTm=0,AnswerNo=,NcdName=
+Jun  2 11:15:30 raspberrypi php: ** doNcdKeyProc ** select Led_assign,IP,realname from phone WHERE phoneno='31'=>1
+Jun  2 11:15:30 raspberrypi php: ** doNcdKeyProc ** NcdIPAddr=10.10.10.131, Led_assign=32, KeyCode=82
+Jun  2 11:15:30 raspberrypi php: ** doNcdKeyProc ** CtiEvent/KeyCode=0/1(1)
+Jun  2 11:15:30 raspberrypi CTI_Tx: Ncd-31, Event-1
+Jun  2 11:15:30 raspberrypi CTI_Tx: pidof -x CTI return 836/836
+Jun  2 11:15:30 raspberrypi CTI_Tx: msgsnd-#016ñ#016æ#003N#00231S#001#001n#00231Ô (Len=16/2/14), CheckSum=d4
+Jun  2 11:15:30 raspberrypi CTI: TX CTI socket-6: Len=17/17, Msg=#016ñ#016æ#003N#00231S#001#001n#00231Ô
+Jun  2 11:15:30 raspberrypi php: ** doNcdKeyProc ** proc_fg IS NULL enent number=1
+Jun  2 11:15:30 raspberrypi php: ** doNcdKeyProc ** panelType=0, cntP= 0/0/0/1/0, active_event=1/1
+Jun  2 11:15:30 raspberrypi php: ** DoSendLedPanel ** panelType=0, 31-1
+Jun  2 11:15:30 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.101/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:30 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:30 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:30 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.102/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:30 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:30 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.103/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.105/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.106/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.107/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.108/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.109/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.110/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.111/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.114/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.116/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.118/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.120/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.122/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.124/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.125/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.127/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.129/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.132/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.134/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc ** file_get_contents:http://10.10.10.136/content.cgi?_method_=ncd6.htm?device=128?status=131b
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** call curl_init
+Jun  2 11:15:31 raspberrypi php: ** curl_file_get_contents ** curl_init sucess
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc-1 ** phoneno=31,NcdIPAddr=10.10.10.131
+Jun  2 11:15:31 raspberrypi php: ** doNcdKeyProc-1 ** phoneno=32,NcdIPAddr=10.10.10.132

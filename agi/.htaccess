@@ -1,0 +1,8 @@
+Options -Indexes
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteRule ^login$ login.php
+RewriteRule ^logout$ logout.php
+RewriteRule ^authResult$ authResult.php
+RewriteRule ^response$ response.php
