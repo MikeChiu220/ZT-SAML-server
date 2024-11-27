@@ -49,8 +49,8 @@ function parseSAMLRequest($samlRequest) {
         'assertionConsumerServiceURL' => $assertionConsumerServiceURL
     ];
 }
-$fidoServerLoginURL = "https://MikeTestUbuntuVM/simplesaml/saml2/idp/SSOService.php?".$_SERVER['QUERY_STRING'];;
-$pswServerLoginURL = "https://MikeTestUbuntuVM/simplesaml/saml_idp.php?".$_SERVER['QUERY_STRING'];;
+$fidoServerLoginURL = "https://idp.kinghold/simplesaml/saml2/idp/SSOService.php?".$_SERVER['QUERY_STRING'];;
+$pswServerLoginURL = "https://idp.kinghold/samlIdp/saml_idp.php?".$_SERVER['QUERY_STRING'];;
 header("HTTP/1.1 301 Moved Permanently");
 	header("Location: $pswServerLoginURL");
 	exit;

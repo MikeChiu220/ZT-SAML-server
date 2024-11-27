@@ -32,7 +32,7 @@ $config = [
      * reverse proxy).
      */
 //  'baseurlpath' => 'simplesaml/',
-    'baseurlpath' => 'https://MikeTestUbuntuVM/simplesaml/',      // Mike[2024/09/09]
+    'baseurlpath' => 'https://idp.kinghold/samlIdp/',      // Mike[2024/09/09]
 
     /*
      * The 'application' configuration array groups a set configuration options
@@ -68,7 +68,7 @@ $config = [
      * When specified as a relative path, this is relative to the SimpleSAMLphp
      * root directory.
      */
-    'cachedir' => '/var/www/html/simplesamlphp/cache',		// Mike[2024/09/09] '/var/cache/simplesamlphp',
+    'cachedir' => '/var/www/ZT-SAML-server/simplesamlphp/cache/',		// Mike[2024/09/09] '/var/cache/simplesamlphp',
     'loggingdir' => '/var/log/simplesaml/',                 // /
     //'datadir' => '/var/data/',
     //'tempdir' => '/tmp/simplesamlphp',
@@ -234,7 +234,7 @@ $config = [
      * Example:
      *   'trusted.url.domains' => ['sp.example.com', 'app.example.com'],
      */
-    'trusted.url.domains' => ['192.168.174.131'],
+    'trusted.url.domains' => ['192.168.10.51', 'idp.kinghold'],
 
     /*
      * Enable regular expression matching of trusted.url.domains.
@@ -1199,7 +1199,7 @@ $config = [
      * The default datastore is 'phpsession'.
      */
     'store.type'                    => 'phpsession',
-	'store.phpsession.savepath'		=> '/var/www/html/simplesamlphp/cache',	// Mike[2024/09/09]
+  	'store.phpsession.savepath'		=> '/var/www/ZT-SAML-server/simplesamlphp/cache/',	// Mike[2024/09/09]
 
     /*
      * The DSN the sql datastore should connect to.

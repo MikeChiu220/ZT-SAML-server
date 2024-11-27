@@ -51,6 +51,51 @@ $metadata['https://legacy.example.edu'] = [
 /*
  * SAML 2.0 SP for Zentera	Mike[2024/09/09]
  */
+$metadata['https://192.168.10.60/launcher'] = [
+	'AssertionConsumerService' => [
+		[
+			'index' => 1,
+			'isDefault' => true,
+			'Location' => 'https://192.168.10.60/launcher/access/procSamlResp',
+			'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+		],
+	],
+	'SingleLogoutService' => [
+    [
+      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+      'Location' => 'https://192.168.10.60/launcher/access/procLogout',
+    ],
+  ],
+	'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
+	// Certificate used to verify the signature from the IdP
+	// Public certificate in PEM format (base64 encoded)
+	'x509cert' => 'MIID6zCCAtOgAwIBAgIUKulVFRWB/HBlSjEmbT2bU+vPufIwDQYJKoZIhvcNAQEL
+BQAwgZ0xCzAJBgNVBAYTAlRXMQ8wDQYDVQQIDAZUYWl3YW4xDzANBgNVBAcMBlRh
+aXBlaTEWMBQGA1UECgwNS2luZ2hvbGQgSW5jLjEWMBQGA1UECwwNUiYgRGVwYXJ0
+bWVudDEoMCYGCSqGSIb3DQEJARYZbWlrZS5jaGl1QGtpbmdob2xkLmNvbS50dzES
+MBAGA1UEAwwJbG9jYWxob3N0MB4XDTI0MDcxMDAwNTIzMVoXDTI1MDcxMDAwNTIz
+MVowgZ0xCzAJBgNVBAYTAlRXMQ8wDQYDVQQIDAZUYWl3YW4xDzANBgNVBAcMBlRh
+aXBlaTEWMBQGA1UECgwNS2luZ2hvbGQgSW5jLjEWMBQGA1UECwwNUiYgRGVwYXJ0
+bWVudDEoMCYGCSqGSIb3DQEJARYZbWlrZS5jaGl1QGtpbmdob2xkLmNvbS50dzES
+MBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+AQEAr+2dst8DDr5gnfc1/7Rs9gxfR5P0s54o9DS0pB8b+4nhaWj+Z8RXmvElVRQN
+hDJnqvXhaSTgTuZwz2cTOIzu0BGSlazuABNM4s9QA4mZYcWelyX8lgzuAE8yVfn/
+I350MBH7v4Z6tpxZCsVRbwwSJUpk3vuxAJwOGMIlGGH16wBXZvkUuLI07fEBA0AH
+hCyNesG89r4ftV0BzaQGzs6PSJYyZ3Qu0/xG485kB4MgEwqJR86W/HUnx4yiQkN2
+j78XVShpPYHAybD2MWeB4CCAH7M3VAfCWUygwYxvJo/Ea/b6O4ue2xA7joo+R9gm
+c3lApxisbzCd4jA4SOVb5nbcKQIDAQABoyEwHzAdBgNVHQ4EFgQUPt/TMJ5MakPR
+Q+4vh3PJGv/SCcQwDQYJKoZIhvcNAQELBQADggEBAG4AwDH7U8D32M4apwfT9WFb
+MsZ92MhHRGpeq1oCZhCEfN2sa+g0sKGUAGl6Wcv5bPl0CWbwFm60vWPwsEDPbzNd
+4bOjcCMHdyXX+ACBmLewMslon70IhPjmuOkPh7UhRn6HuDwOixfulbCEFfuNKXHG
+LQAdfhdv4PzjLp6/tbqc56JYArctUor5GRZ8IdJEGgSeHM/uIoOlZuvc9ftKTnJ8
+z7Me31JXXfDoqRME7CHHP44HZQLPjIxVOOEjPxCmwy5eBgNIpngZVAB36qeydKha
+T/nd3Rna4+VW5R2X2XybeNUODWKR8b/amzHWm03zR8fIgGivh4ssOsP/x+s/VnA=',
+	// Optional: If the IdP requires signing requests, add a private key for signing requests
+	'privatekey' => 'server.key',
+	'certificate' => 'server.crt',
+
+];
+
 $metadata['https://apacrd2.zentera.net/launcher'] = [
 	'AssertionConsumerService' => [
 		[

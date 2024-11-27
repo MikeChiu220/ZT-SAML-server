@@ -10,7 +10,6 @@ ini_set('display_errors', 1);
 // Get the metadata storage handler for Get the IdP entity ID
 $metadataHandler = \SimpleSAML\Metadata\MetaDataStorageHandler::getMetadataHandler();
 $idpEntityId = $metadataHandler->getMetaDataCurrentEntityID('saml20-idp-hosted');
-//$idpEntityId = 'https://miketestubuntuvm/samlTestEntityID';
 
 // Handle SAML 2.0 SP-initiated SSO
 $idp = SimpleSAML\IdP::getById('saml2:' . $idpEntityId);
@@ -136,10 +135,17 @@ if ($storedRequest !== null) {
         throw new SimpleSAML\Error\BadRequest('Error processing stored SAML request: ' . $e->getMessage());
     }
 } else {
+    // No stored SAML request, direct do FIDO Login
+    $fidoLoginURL = "https://idp.kinghold/samlIdp/module.php/fidoauth/fidoLogin.php";
+    header("HTTP/1.1 301 Moved Permanently");
+    header("Location: $fidoLoginURL");
+    exit;
+/*
     // No stored SAML request, show attributes or login link
     echo "<h2>Authenticated User Attributes:</h2>";
     echo "<pre>" . print_r($attributes, true) . "</pre>";
     echo "<a href='?logout'>Logout</a>";
+*/
 }
 
 // Handle logout action

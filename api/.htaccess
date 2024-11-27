@@ -1,0 +1,5 @@
+Options -Indexes
+Options +FollowSymlinks
+RewriteEngine on
+RewriteBase /api/
+RewriteRule ^v1/(.*)$ index.php?v1=$1 [QSA,L]

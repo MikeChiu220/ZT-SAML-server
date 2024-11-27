@@ -9,7 +9,7 @@
 // $metadata['urn:x-simplesamlphp:example-idp'] = [
 // $metadata['__DYNAMIC:1__'] = [
 // $metadata['http://192.168.174.131/samlTestEntityID'] = [
-$metadata['https://miketestubuntuvm/samlTestEntityID'] = [
+$metadata['https://idp.kinghold/samlIdp'] = [
         /*
      * The hostname of the server (VHOST) that will use this SAML entity.
      *
@@ -60,7 +60,7 @@ $metadata['https://miketestubuntuvm/samlTestEntityID'] = [
     'SingleLogoutService' => array(
         array(
             'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
-            'Location' => 'https://miketestubuntuvm/simplesaml/saml2/idp/SingleLogoutService.php',
+            'Location' => 'https://idp.kinghold/samlIdp/saml2/idp/SingleLogoutService.php',
         ),
     ),
 ];
