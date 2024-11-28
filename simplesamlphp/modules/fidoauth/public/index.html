@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FIDO Registration</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="https://unpkg.com/@simplewebauthn/browser"></script>
+    <style>
+        .instructions {
+            display: none;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>FIDO Registration</h1>
+    <button id="registerBtn">Register FIDO Key</button>
+    <div id="registrationInstructions" class="instructions">
+        <p>Please insert your FIDO security key and follow the browser instructions to complete the registration.</p>
+    </div>
+
+    <h1>FIDO Login</h1>
+    <button id="loginBtn">Login with FIDO Key</button>
+    <div id="loginInstructions" class="instructions">
+        <p>Please insert your FIDO security key and follow the browser instructions to complete the login.</p>
+    </div>
+
+    <script>
+        document.getElementById('registerBtn').onclick = async function() {
+            try {
+                const username = prompt("Enter your username:");
+                const registrationResponse = await axios.post('http://localhost:3000/webauthn/register', { username });
+
+                const publicKey = registrationResponse.data;
+
+                // Show registration instructions
+                document.getElementById('registrationInstructions').style.display = 'block';
+
+                const credential = await SimpleWebAuthnBrowser.startRegistration(publicKey);
+
+                const credentialResponse = {
+                    id: credential.id,
+                    rawId: Array.from(new Uint8Array(credential.rawId)),
+                    type: credential.type,
+                    response: {
+                        attestationObject: Array.from(new Uint8Array(credential.response.attestationObject)),
+                        clientDataJSON: Array.from(new Uint8Array(credential.response.clientDataJSON)),
+                    },
+                };
+
+                await axios.post('http://localhost:3000/webauthn/register/response', { username, credential: credentialResponse });
+
+                // Hide registration instructions
+                document.getElementById('registrationInstructions').style.display = 'none';
+                alert("FIDO Key registered successfully!");
+            } catch (error) {
+                console.error('Registration failed:', error);
+                alert('Registration failed: ' + error);
+                // Hide registration instructions in case of error
+                document.getElementById('registrationInstructions').style.display = 'none';
+            }
+        };
+
+        document.getElementById('loginBtn').onclick = async function() {
+            try {
+                const username = prompt("Enter your username:");
+                const loginResponse = await axios.post('http://localhost:3000/webauthn/login', { username });
+
+                const publicKey = loginResponse.data;
+
+                // Show login instructions
+                document.getElementById('loginInstructions').style.display = 'block';
+
+                console.log(publicKey);  // 打印 publicKey 檢查其結構
+                
+                const credential = await SimpleWebAuthnBrowser.startAuthentication(publicKey);
+
+                const credentialResponse = {
+                    id: credential.id,
+                    rawId: Array.from(new Uint8Array(credential.rawId)),
+                    type: credential.type,
+                    response: {
+                        authenticatorData: Array.from(new Uint8Array(credential.response.authenticatorData)),
+                        clientDataJSON: Array.from(new Uint8Array(credential.response.clientDataJSON)),
+                        signature: Array.from(new Uint8Array(credential.response.signature)),
+                        userHandle: Array.from(new Uint8Array(credential.response.userHandle)),
+                    },
+                };
+
+                await axios.post('http://localhost:3000/webauthn/login/response', { username, credential: credentialResponse });
+
+                // Hide login instructions
+                document.getElementById('loginInstructions').style.display = 'none';
+                alert("Logged in with FIDO Key successfully!");
+            } catch (error) {
+                console.error('Login failed:', error);
+                alert('Login failed: ' + error);
+                // Hide login instructions in case of error
+                document.getElementById('loginInstructions').style.display = 'none';
+            }
+        };
+    </script>
+</body>
+</html>
